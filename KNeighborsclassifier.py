@@ -1,0 +1,11 @@
+x = np.array ([[150,7],[160,8],[170,7],[180,8],[190,9]]) #peso(g), diametro(cm)
+y = np.array(["Mela","Mela","Mela","Arancia","Arancia"]) #etichette
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,random_state=42)
+model = KNeighborsClassifier(n_neighbors=3)
+model.fit(x_train,y_train)
+nuovo_frutto = np.array([[175,8]])
+predizione = model.predict(nuovo_frutto)
+print(f"Il frutto è probabilmente una: {predizione[0]}")
+y_pred = model.predict(x_test)
+accuracy = accuracy_score(y_test, y_pred)
+print(f"Accuratezza: {accuracy*100}%")
