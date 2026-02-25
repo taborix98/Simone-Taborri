@@ -1,3 +1,14 @@
+'''
+Nell'esercizio di battaglia navale ho creato due mappe in un file esterno da poter scegliere per giocare,
+poi le ho importante nel codice del gioco e ho creato le classi per poter utilizzare due giocatori. 
+Ho creato due funzioni: una che controllasse se uno dei giocatori avesse perso la partita e
+l'altra per controllare se con un turno fosse stata colpita la nave avversaria.; 
+ho anche creato una mappa che segnasse le caselle in cui si era già tirato, per evitare che si ripetesse un tiro 
+(utilizzando uno stesso simbolo sia per i tiri andati a segno che per quelli non andati a segno, in modo da non dare indizi).
+Per ultimo, ho creato una funzione che partisse con un while, 
+in modo che si protraesse fino a che nessuno dei due giocatori avesse perso la partita 
+e nelle righe successive viene data la possibilità ai giocatori di inserire il numero della riga e della colonna in cui colpire.
+'''
 mappe = [
     [
        ["O","O","O","O","O",".",".",".",".","."],
